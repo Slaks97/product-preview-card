@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    background-color: #fff;
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.card {
+    width: 50%;
+}
+
+.hero-container {
+    height: 100%;
+}
+
+.hero-img {
+    padding: 0;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.text {
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 30px;
+    color: hsl(212, 21%, 14%);
+    line-height: 1.2;
+}
+
+.category {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.description {
+    line-height: 1.6;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 190px;
+}
+@media (max-width: 518px) {
+    .prices {
+        margin: 10px 0 10px;
+    }   
+}
+
+.sale-price {
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+
+.rrp {
+    text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+img {
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(158, 41%, 53%);
+}
+
+
+/* mobile version */
+@media (max-width: 518px) {
+    @media (max-width: 518px) {
+        .container {
+            flex-direction: column;
+            height: auto;
+        }
+    }
+    @media (max-width: 518px) {
+        .card {
+            width: 100%;
+        }
+    }
+    @media (max-width: 518px) {
+        .hero-img {
+            width: 100%;
+            object-fit:cover;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 0;
+            height: 25vh;
+        }
+    }
+    @media (max-width: 518px) {
+        .text {
+            line-height: 1.6;
+        }
+    }
+    @media (max-width: 518px) {
+        h1 {
+            margin: 10px 0 10px;
+        }
+    }
+    @media (max-width: 518px) {
+        .description {
+            margin: 10px 0 10px;
+        }
+    }
+}
