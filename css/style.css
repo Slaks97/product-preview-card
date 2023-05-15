@@ -11,7 +11,7 @@ body {
     color: hsl(228, 12%, 48%);
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
 }
 
@@ -25,19 +25,20 @@ img {
     height: 450px;
     border-radius: 10px;
     display: flex;
+    overflow: hidden;
 }
 
-.card {
+section {
     width: 50%;
 }
 
 .hero-container {
-    height: 100%;
+    min-height: 100%;
 }
 
 .hero-img {
     padding: 0;
-    height: 100%;
+    min-height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -49,11 +50,12 @@ img {
     justify-content: space-between;
 }
 
-h1 {
+header h1 {
     font-family: 'Fraunces', sans-serif;
     font-size: 30px;
     color: hsl(212, 21%, 14%);
     line-height: 1.2;
+    margin: 20px 0;
 }
 
 .category {
@@ -93,6 +95,10 @@ button {
     padding: 15px 20px;
     border-radius: 10px;
     border: none;
+    color: #fff;
+    font-weight: 700;
+    display: block;
+    width: 100%;
 }
 
 img {
@@ -153,3 +159,4 @@ button:hover {
         }
     }
 }
+
