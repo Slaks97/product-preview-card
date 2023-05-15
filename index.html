@@ -15,7 +15,11 @@
     <main class="container">
       <section class="card">
         <div class="hero-container">
-          <img class="hero-img" src="images/image-product-desktop.jpg" alt="a bottle of Chanel perfume">
+          <picture>
+            <source media="(max-width: 518px)" srcset="images/image-product-mobile.jpg">
+            <source media="(min-width: 517px)" srcset="images/image-product-desktop.jpg">
+            <img class="hero-img" src="images/image-product-desktop.jpg" alt="a bottle of Chanel perfume">
+          </picture>
         </div>
       </section>
       <section class="card text">
